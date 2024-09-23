@@ -1,4 +1,4 @@
-/* Fichier CSS non minifié avec des styles redondants */
+/* Fichier CSS minifié */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #fafafa;
@@ -11,17 +11,13 @@ h1, h2 {
     margin-bottom: 20px;
 }
 
-h1 {
-    font-size: 36px;
-}
-
-h2 {
-    font-size: 30px;
-}
+h1 { font-size: 36px; }
+h2 { font-size: 30px; }
 
 img {
     max-width: 100%;
     height: auto;
+    loading: lazy; /* Chargement paresseux des images */
 }
 
 footer {

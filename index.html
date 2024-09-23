@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Web Lourd</title>
     <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"></noscript>
 </head>
 <body>
     <header>
-        <img src="banner.jpg" alt="Bannière non optimisée">
+        <img src="banner.jpg" alt="Bannière" loading="lazy">
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
@@ -31,8 +32,8 @@
         <section>
             <h2>Section avec contenu inutilement long</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-            <img src="large-image1.jpg" alt="Image non optimisée 1">
-            <img src="large-image2.jpg" alt="Image non optimisée 2">
+            <img src="large-image1.jpg" alt="Image non optimisée 1" loading="lazy">
+            <img src="large-image2.jpg" alt="Image non optimisée 2" loading="lazy">
         </section>
     </main>
 
@@ -40,7 +41,7 @@
         <p>© 2024 Site Lourd | Tous droits réservés.</p>
     </footer>
     
-    <script src="app.js"></script>
-    <script src="analytics.js"></script>
+    <script src="app.js" defer></script>
+    <script src="analytics.js" defer></script>
 </body>
 </html>
